@@ -7,6 +7,26 @@
 </head>
 <body>
     <h1>Prueba de github</h1>
-    
+    <h1>suma de datos</h1>
+    <div>
+        <input type="text" placeholder="ingrese un numero" id="datoa" value="6">
+    </div>
+    <div>
+        <input type="text" placeholder="ingrese un numero" id="datob">
+    </div>
+    <button type="button" id="sumar">sumar</button>
+    <label for="">resultado</label>
+    <div id="resultado"></div>
+    <script>
+        
+        document.getElementById("sumar").addEventListener("click",event=>{
+            let a=document.getElementById("datoa").value;
+            let b=document.getElementById("datob").value;    
+            console.log(event);
+            let total=parseInt(a)+parseInt(b);
+            document.getElementById("resultado").innerHTML=total;
+            console.log(a,b,"el total es: "+total)
+        });
+    </script>
 </body>
 </html>
